@@ -1,0 +1,2 @@
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard\bin\Debug\ServiceDefinition.csdef

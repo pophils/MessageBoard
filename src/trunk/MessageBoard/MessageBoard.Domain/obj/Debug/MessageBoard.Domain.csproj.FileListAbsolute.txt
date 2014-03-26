@@ -1,0 +1,7 @@
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\bin\Debug\MessageBoard.Domain.dll
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\bin\Debug\MessageBoard.Domain.pdb
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\bin\Debug\NHibernate.dll
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\obj\Debug\MessageBoard.Domain.dll
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\obj\Debug\MessageBoard.Domain.pdb
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\bin\Debug\Iesi.Collections.dll
+C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\obj\Debug\MessageBoard.Domain.csprojResolveAssemblyReference.cache

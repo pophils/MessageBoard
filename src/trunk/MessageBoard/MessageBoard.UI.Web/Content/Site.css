@@ -1,0 +1,119 @@
+﻿
+ body { 
+     background-color: #fff; 
+     border-top: solid 10px #000;
+     color: #808080;
+     font-size: .85em;
+     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+     margin: 0;
+     padding: 0;
+}
+  .title {
+      margin: 0 auto;width: 650px;text-align: center;margin-top: 25px;
+  }
+  .desc {
+      font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+      letter-spacing: .01rem;
+      margin-top: -15px;
+      font-size: 20px;
+ 
+  }
+
+  .content-wrap {
+      width: 1200px;
+      height: 90%;
+       margin: 0 auto;
+      margin-top: 50px;
+  }
+
+  .new-message {
+      height: auto;
+      float: left;
+      width: 420px;
+  }
+
+  .mess-list {
+      height: auto;
+      float: left;
+      padding-left: 30px;
+      width: 665px;
+      margin-left: 50px;
+      padding-bottom: 25px;
+  }
+
+  .vseperator {
+      float: left;
+      height: 120px;
+      margin-top: 120px;
+      border-left: 1px solid #ccc;
+      width: 0px;
+  }
+
+ .new-message .rtf{              
+    width: 100%;height: auto;
+     border: 1px solid green;
+    font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color:#B3B3B1;
+    line-height: 1.45;
+    border: none;
+    outline:none;
+     resize: none;
+ }
+
+ .new-message .onkeyPressed {            
+     color: #242424;
+ }
+ .btn-wrap {
+     margin-top: 10px;
+     float: left;
+     margin-top: 15px;
+ }
+  
+ .btn-wrap button {
+     height: 38px;
+     line-height: 37px;
+     padding: 0 16px;
+     color: #8E8E8C;
+     background: rgba(0, 0, 0, 0);
+     font-size: 14px;
+     text-align: center;
+     text-decoration: none;
+     cursor: pointer;
+     border: 1px solid #DEDEDC;
+     vertical-align: bottom;
+     -webkit-border-radius: 999em;
+     -moz-border-radius: 999em;
+     border-radius: 999em;
+     outline: none;
+
+ }
+ 
+ .btn-wrap button:hover {
+     border-color: #2892C6;
+     font-weight: bold;
+
+ }
+ 
+ .message-content, .no-mess {
+     font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+     letter-spacing: normal;
+     font-style: normal;
+     font-size: 18px;
+     color: #3D3C3C;
+     line-height: 1.45;
+     border-bottom: 1px solid #E7E7E7;
+     padding-bottom: 15px;
+     outline:none;
+ }
+ 
+ .clear-bottom-border {
+     border-bottom: none;
+ }
+ 
+ .mess-trending {
+     margin: 0;
+ }

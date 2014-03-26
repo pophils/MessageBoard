@@ -1,0 +1,87 @@
+﻿@model MessageBoard.UI.Web.Models.MessageListWrapper
+@{
+    
+    long firstMessageIdOnFirstLoad = 0;
+    long currentNumOfMessFetched = 0;
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Message Board</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet"  href="/Content/Site.css"  />
+        </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>Message Board</h1>  
+                <p class="desc"> Stash your future messages</p>
+            </div>
+        </header>
+        
+        <section class="content-wrap">
+            <section class="new-message">
+                <div class="rtf" contenteditable="true">Write a new message...</div>
+                <div class="btn-wrap">
+                    <button class="save-btn" title="Save" >Save</button>
+                </div>
+            </section>
+            <div class="vseperator"></div>
+
+            <section id="mess-list" class="mess-list">
+                
+                <h3 class="mess-trending"> Trending Messages</h3>
+                
+                @if(Model != null && Model.Messages.Any())
+                {
+                    var messages = Model.Messages;
+                    foreach (var message in messages)
+                    {
+                        if (message == messages.Last())
+                        {
+                            <p class="message-content clear-bottom-border ">@message.Content</p>
+                           
+                        }
+                        else
+                        {
+                            <p class="message-content">@message.Content</p>
+                        }
+                        
+                           if (message == messages.First())
+                        {
+
+                            { firstMessageIdOnFirstLoad = message.Id; }
+                             <input type="hidden" id="firstMessageIdOnFirstLoad" value="@firstMessageIdOnFirstLoad"/>
+                        }
+                    }
+                    
+                    if(Model.CanLoadMore)
+                    {
+                        <div class="btn-wrap">
+                                <button class="load-more-btn" title="Save" >Load More</button>
+                        </div>
+                    }
+                    
+                   
+                       {currentNumOfMessFetched = messages.Count;}
+                    <input type="hidden" id="currentNumOfMessFetched" value="@currentNumOfMessFetched"/>
+                     <input type="hidden" id="pageNo" value="1"/>
+                    
+                }
+                else
+                {
+                    <p class="no-mess clear-bottom-border ">No message has been saved yet.</p>
+                    <input type="hidden" id="pageNo" value="0"/>
+                }
+
+            </section>
+
+        </section>
+        
+    </body>
+    
+    <script type="text/javascript" src="/Scripts/jquery-1.8.2.min.js"></script> 
+    <script type="text/javascript" src="/Scripts/messageboard.js"></script> 
+</html>
