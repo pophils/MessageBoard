@@ -51,20 +51,20 @@
 
  .new-message .rtf{              
     width: 100%;height: auto;
-     border: 1px solid green;
+   
     font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
     letter-spacing: normal;
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    color:#B3B3B1;
+  
     line-height: 1.45;
     border: none;
     outline:none;
      resize: none;
  }
 
- .new-message .onkeyPressed {            
+  .onkeyPressed {            
      color: #242424;
  }
  .btn-wrap {
@@ -73,7 +73,7 @@
      margin-top: 15px;
  }
   
- .btn-wrap button {
+  button{
      height: 38px;
      line-height: 37px;
      padding: 0 16px;
@@ -92,13 +92,25 @@
 
  }
  
- .btn-wrap button:hover {
+  button:hover {
      border-color: #2892C6;
      font-weight: bold;
 
  }
+
+
+  #mess-list .header {
+      margin-bottom: 45px;
+  }
+  .upd-btn {
+      float: right;
+      margin-top: -10px;
+      display: none;
+      }
  
  .message-content, .no-mess {
+   
+     clear: both;
      font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
      letter-spacing: normal;
      font-style: normal;
@@ -116,4 +128,5 @@
  
  .mess-trending {
      margin: 0;
+     float: left;
  }
