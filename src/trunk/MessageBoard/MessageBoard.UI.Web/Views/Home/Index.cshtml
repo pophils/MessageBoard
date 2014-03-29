@@ -3,6 +3,7 @@
     
     long firstMessageIdOnFirstLoad = 0;
     long currentNumOfMessFetched = 0;
+    int pageNo = 0;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,7 @@
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet"  href="/Content/Site.css"  />
         </head>
-    <body>
+    <body> 
         <header>
             <div class="title">
                 <h1>Message Board</h1>  
@@ -25,14 +26,17 @@
             <section class="new-message">
                 <div class="rtf" contenteditable="true">Write a new message...</div>
                 <div class="btn-wrap">
-                    <button class="save-btn" title="Save" >Save</button>
+                    <button class="save-btn" title="Save" >Post</button>
                 </div>
             </section>
             <div class="vseperator"></div>
 
             <section id="mess-list" class="mess-list">
                 
-                <h3 class="mess-trending"> Trending Messages</h3>
+                <div class="header">
+                    <h3 class="mess-trending"> Trending Messages</h3>
+                <button class="upd-btn"> </button>
+                </div>
                 
                 @if(Model != null && Model.Messages.Any())
                 {
@@ -51,9 +55,7 @@
                         
                            if (message == messages.First())
                         {
-
                             { firstMessageIdOnFirstLoad = message.Id; }
-                             <input type="hidden" id="firstMessageIdOnFirstLoad" value="@firstMessageIdOnFirstLoad"/>
                         }
                     }
                     
@@ -63,19 +65,23 @@
                                 <button class="load-more-btn" title="Save" >Load More</button>
                         </div>
                     }
-                    
-                   
-                       {currentNumOfMessFetched = messages.Count;}
-                    <input type="hidden" id="currentNumOfMessFetched" value="@currentNumOfMessFetched"/>
-                     <input type="hidden" id="pageNo" value="1"/>
-                    
+
+                    { 
+                        currentNumOfMessFetched = messages.Count;
+                        pageNo = 1;
+                    }
                 }
                 else
                 {
                     <p class="no-mess clear-bottom-border ">No message has been saved yet.</p>
-                    <input type="hidden" id="pageNo" value="0"/>
+                    {
+                        pageNo = 0;
+                    }
                 }
-
+                
+                <input type="hidden" id="currentNumOfMessFetched" value="@currentNumOfMessFetched"/>
+                <input type="hidden" id="pageNo" value="@pageNo"/>
+                <input type="hidden" id="firstMessageIdOnFirstLoad" value="@firstMessageIdOnFirstLoad"/>
             </section>
 
         </section>
