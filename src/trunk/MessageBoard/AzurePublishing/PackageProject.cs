@@ -316,9 +316,11 @@ namespace AzurePublishing
                         {
                             DeleteMsDeployDir(msDeployDir);
                             if (CheckAzurePackage(serviceDefFileInfo.Directory + @"\" + roleName + "-Release.cspkg"))
+                            {
                                 Console.WriteLine(" Done creating a new Azure package at: " +
                                                    serviceDefFileInfo.Directory + @"\" + roleName + "-Release.cspkg \n");
-                            ShowDirectoryViaExplorer(serviceDefFileInfo.Directory.ToString());
+                                ShowDirectoryViaExplorer(serviceDefFileInfo.Directory.ToString());
+                            }
                         };
 
                         csPackProc.Start();
