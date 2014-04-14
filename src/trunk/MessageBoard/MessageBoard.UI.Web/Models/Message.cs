@@ -10,7 +10,7 @@ namespace MessageBoard.UI.Web.Models
     {
         public string Content { get; set; }
     }
-
+ 
     public class MessageListWrapper
     {
         public IList<Message> Messages { get; set; }

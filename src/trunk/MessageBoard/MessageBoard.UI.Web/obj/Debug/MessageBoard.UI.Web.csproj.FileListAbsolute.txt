@@ -70,3 +70,9 @@ C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.UI.Web\
 C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.UI.Web\bin\Iesi.Collections.dll
 C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.UI.Web\bin\hibernate.cfg.xml
 C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.UI.Web\bin\Omu.ValueInjecter.dll
+C:\outdir\hibernate.cfg.xml
+C:\outdir\MessageBoard.UI.Web.dll
+C:\outdir\MessageBoard.UI.Web.pdb
+C:\packageTmp\hibernate.cfg.xml
+C:\packageTmp\MessageBoard.UI.Web.dll
+C:\packageTmp\MessageBoard.UI.Web.pdb

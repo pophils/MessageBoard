@@ -5,3 +5,7 @@ C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\
 C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\obj\Debug\MessageBoard.Domain.pdb
 C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\bin\Debug\Iesi.Collections.dll
 C:\Users\Seun\Documents\MessageBoard\src\trunk\MessageBoard\MessageBoard.Domain\obj\Debug\MessageBoard.Domain.csprojResolveAssemblyReference.cache
+C:\outdir\MessageBoard.Domain.dll
+C:\outdir\MessageBoard.Domain.pdb
+C:\packageTmp\MessageBoard.Domain.dll
+C:\packageTmp\MessageBoard.Domain.pdb
