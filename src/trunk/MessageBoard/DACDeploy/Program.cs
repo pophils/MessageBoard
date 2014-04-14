@@ -37,7 +37,7 @@ namespace DACDeploy
                     var bacpacPath = dacConfig.BACPACDirPath + @"\" + dacConfig.ExportSourceDatabaseName + ".bacpac";
                     if (DbasePac.ExportLocalBacpac(dacConfig.LocalConnectionString, dacConfig.ExportSourceDatabaseName, bacpacPath))
                     {
-                        if (DbasePac.ImportBacpac(dacConfig.LocalConnectionString, dacConfig.ImportDatabaseName, bacpacPath))
+                        if (DbasePac.ImportBacpac(dacConfig.RemoteConnectionString, dacConfig.ImportDatabaseName, bacpacPath))
                             DbasePac.DeleteBacpac(bacpacPath);
                     }
                 }
